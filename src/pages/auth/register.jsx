@@ -31,10 +31,14 @@ const RegisterPage = () => {
       className="w-screen h-screen flex justify-center items-center bg-black text-white font-['Courier_New'] relative"
     >
       {/* Particle Background */}
-      <ParticlesComponent id="particles-register" className="absolute inset-0 -z-10" />
+      <ParticlesComponent 
+        id="particles-register"
+        className="absolute inset-0 -z-10"
+        />
+
 
       {/* Register Form */}
-      <div className="w-[90%] max-w-xl p-8 sm:p-12 bg-[#121212] rounded-3xl shadow-[0_0_25px_#00FF00] border-4 border-[#ADFF2F] hover:shadow-[0_0_35px_#ADFF2F] transition-transform duration-500 hover:scale-105">
+      <div className="w-[90%] max-w-xl p-8 sm:p-12 bg-[#121212] rounded-3xl shadow-[0_0_25px_#00FF00] border-4 border-[#ADFF2F]">
         <h2 className="text-5xl font-extrabold text-center mb-10 uppercase bg-[#ADFF2F] py-4 rounded-lg shadow-md text-black tracking-wide">
           Register
         </h2>
@@ -48,7 +52,7 @@ const RegisterPage = () => {
               onChange={(e) => setRegistrationNumber(e.target.value)}
               className="p-4 rounded-lg bg-[#0F0F0F] text-white border-2 border-[#ADFF2F] focus:outline-none focus:ring-2 focus:ring-[#ADFF2F] placeholder-gray-400"
               placeholder="Enter Registration Number"
-              required
+              required autoFocus
             />
           </div>
 

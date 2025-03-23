@@ -14,7 +14,8 @@ function MainHeader({ setOpen }) {
 
   return (
     <header className="flex items-center px-4 py-3 bg-black text-[#00FF41] justify-between font-['Playfair_Display']">
-            <ParticlesComponent id="particles" className="absolute inset-0 -z-10" />
+           <ParticlesComponent id="particles" className="absolute inset-0 -z-10 pointer-events-none" />
+
 
       <Button
         onClick={() => setOpen(true)}

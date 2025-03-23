@@ -7,9 +7,12 @@ import MainDashboard from './pages/main/Dashboard';
 import MainRules from './pages/main/rules';
 import MainTeam from './pages/main/addTeams';
 import MainLeaderboard from './pages/main/Leaderboard';
-
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "CryptoClash";
+  }, []);
   return (
     <Router>
       <Routes>
